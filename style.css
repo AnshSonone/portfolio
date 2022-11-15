@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background-image: url('portfolio.jpg');
+    background-size: cover;
+}
+
+.container {
+    display: none;
+    cursor: pointer;
+  }
+
+.navbar{
+    display: flex;
+    margin: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.title{
+    color: white;
+    font-family: serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.maintitle{
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Playfair Display, serif; 
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+.navbar ul :hover{
+    color: #e39726;
+}
+
+.navitem li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+
+
+.content h1{
+    color: white;
+    margin-top: 6em;
+    margin-left: 30px;
+    font-size: x-large;
+    
+}
+
+.bigcon{
+    color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+/*=============================
+    about page css
+=============================*/
+
+.para{
+    color: white;
+    
+}
+
+/*================================
+
+    for mobile screen only
+=================================*/
+
+@media screen and (max-width: 644px) {
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    margin: 126px 30px;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Playfair Display, serif; 
+    color: white;
+    
+}
+
+
+.navbar ul li{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.maintitle{
+    justify-content: center;
+    margin: -50px 55px;
+    color: white;
+    display: flex;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.title{
+    display: none;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+
+
+.bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
+
+.active {
+    display: none;
+    height: 0px;
+    margin: 40px 30px;
+}
+
+.actnav{
+    display: flex;
+    flex-direction: column;
+    margin: 34px 30px;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+}
