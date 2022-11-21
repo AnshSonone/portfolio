@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-image: url('portfolio.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -31em;
+}
+
+.container {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    margin: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.title {
+    color: white;
+    font-family: serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.mobiletitle {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Playfair Display, serif;
+    color: white;
+    cursor: pointer;
+
+}
+
+.navbar ul li a:hover {
+    color: #e39726;
+}
+
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.content{
+    position: absolute;
+    z-index: -3;
+}
+
+
+.content h1 {
+    color: white;
+    margin-top: 6em;
+    margin-left: 30px;
+    font-size: x-large;
+}
+
+.bigcon {
+    color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+.mobilenav {
+    display: none;
+}
+
+/*=============================
+    about page css
+=============================*/
+.aboutcontent{
+    display: flex;
+    color: white;
+    font-family: serif;
+    position: relative;
+    z-index: -3;
+}
+
+.contentitem{
+    width: 25%;
+    height: 100vh;
+    padding-left: 20px;
+    margin-left: 8px;
+}
+
+.contentitem img{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 101px;
+}
+
+.h{
+    margin-top: 20px;
+}
+
+.line1{
+    width: 22px;
+    height: 4px;
+    background-color: #ff0808;
+    border-radius: 42px;
+    animation: line1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line1{
+    form{
+        width: 30px;
+    }
+    to{
+        width: 140px;
+    }}
+
+.c{
+    margin-top: 15px;
+}
+.line2{
+    width: 22px;
+    height: 4px;
+    background-color: #ff0808;
+    border-radius: 42px;
+    animation: line2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line2{
+    form{
+        width: 30px;
+    }
+    to{
+        width: 123px;
+    }}
+
+.javascript{
+    margin-top: 15px;
+}
+.line3{
+    width: 22px;
+    height: 4px;
+    background-color: #ff0808;
+    border-radius: 42px;
+    animation: line3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line3{
+    form{
+        width: 30px;
+    }
+    to{
+        width: 80px;
+    }}
+
+.react{
+    margin-top: 15px;
+}
+.line4{
+    width: 22px;
+    height: 4px;
+    background-color: #ff0808;
+    border-radius: 42px;
+    animation: line4;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line4{
+    form{
+        width: 30px;
+    }
+    to{
+        width: 45px;
+    }}
+
+.node{
+    margin-top: 15px;
+}
+.line5{
+    width: 2px;
+    height: 4px;
+    background-color: #ff0808;
+    border-radius: 42px;
+    animation: line5;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line5{
+    form{
+        width: 5px;
+    }
+    to{
+        width: 20px;
+    }}
+
+.mongo{
+    margin-top: 15px;
+}
+.line6{
+    width: 2px;
+    height: 4px;
+    background-color: #ff0808;
+    border-radius: 42px;
+    animation: line6;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line6{
+    form{
+        width: 5px;
+    }
+    to{
+        width: 20px;
+    }}
+
+
+.paragraph{
+    width: 75%;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.paragraph p{
+    color: white;
+}
+
+/*==============================
+    Contact Page Css
+================================*/
+.lo50{
+    color: white;
+    margin-top: 35px;
+}
+
+.word{
+    color: white;
+    margin-top: 104px;
+    margin-left: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.insta{
+    width: 3%;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+.ansh{
+    color: white;
+    margin-left: 24px;
+}
+.ishita{
+    color: white;
+    margin-left: 24px;
+}
+
+/*================================
+
+    for mobile screen only
+=================================*/
+
+@media screen and (max-width: 644px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .mobilenav {
+        position: fixed;
+        top: 100%;
+        display: block;
+        z-index: -1;
+        background: rgb(61 0 62 / 81%);
+        width: 100%;
+        height: 39%;
+        padding-top: 141px;
+        transition: 0.4s;
+    }
+
+    .mobilenav.is-active {
+        top: 0%;
+    }
+
+    .mobilenav a {
+        display: flex;
+        font-family: serif;
+        display: flex;
+        font-family: serif;
+        justify-content: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 800;
+        color: white;
+        margin-top: 44px;
+    }
+
+    .mobiletitle {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        margin-top: -49px;
+        font-size: xx-large;
+        font-weight: 600;
+    }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        margin: 8px 10px;
+        z-index: 0;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 22px;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 6px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -10px) rotate(45deg);
+    }
+
+/* =================
+mobile about page
+==================*/
+
+.contentitem{
+    width: 45%;
+    height: 100vh;
+    padding-left: 20px;
+}
+.name{
+    margin-left: -2px;
+}
+
+.paragraph{
+    width: 55%;
+    padding: 50px 20px;
+}
+
+}
